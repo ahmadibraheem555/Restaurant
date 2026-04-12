@@ -1,0 +1,509 @@
+html {
+    font-family: "Nunito", sans-serif;
+}
+.bg-main-white{
+    background-color: white;
+}
+.bg-main-color{
+    background-color: #0f172b !important  ;
+}
+.bg-second-color{
+    background-color: #FEA116 !important  ;
+}
+
+.text-main-color {
+    color: #FEA116 !important;
+}
+.titel{
+    font-size: 40px;
+    font-weight: bold;
+}
+.nav-link:hover{
+    color: #FEA116 !important;
+
+}
+.header-section{
+    background: linear-gradient(rgba(15, 23, 43, .9), rgba(15, 23, 43, .9)), url('./imgs/bg-hero.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+}
+.header-body{
+   margin: 5%;
+}
+
+.header-body img{
+    max-width: 500px;
+    max-height: 500px;
+    animation: rotet 50s linear infinite;
+}
+.h1{
+    font-family: cursive;
+    font-weight: bold;
+}
+.p{
+    font-family: cursive;
+    font-size: 30px;
+}
+
+.btn:hover{
+    background-color: white;
+    color: white;
+    border-radius: 30px ;
+    opacity: 0.7;
+}
+
+.text-blak{
+    color: #bb7711;
+}
+
+.servises .card:hover, .card:hover i {
+    background-color: #FEA116;
+    color: white !important;
+   
+
+}
+.card:hover h6 {
+    color: rgb(39, 26, 2);
+}
+.servises .card  {
+    transition: 0.1s all ease-in-out ;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.08);
+}
+.servises .card i{
+    transition: 0.1s all ease-in-out ;
+
+}
+
+.secound-font{
+    position: relative;
+    font-family: 'Pacifico', cursive !important;
+    color: #FEA116;
+}
+
+
+.secound-font::after{
+    content: '';
+    width: 50PX;
+    height: 3PX;
+    background-color: #FEA116 !important;
+    position: absolute;
+    right: 350PX;
+    top: 25px;
+}
+.contuct-us .secound-font::after{
+    content: '';
+    width: 50PX;
+    height: 3PX;
+    background-color: #FEA116 !important;
+    position: absolute;
+    right: 400PX;
+    top: 25px;
+}
+.width-before::before{
+    content: '';
+    width: 50PX;
+    height: 3PX;
+    background-color: #FEA116 !important;
+    position: absolute;
+    left: 420PX;
+    top: 25px;
+}
+.width-before::after{
+    content: '';
+    width: 50PX;
+    height: 3PX;
+    background-color: #FEA116 !important;
+    position: absolute;
+    right: 420PX;
+    top: 25px;
+}
+.width{
+    border-left: 5px solid #FEA116;
+    padding-left: 15px;
+    display: flex;
+    height: 60px;
+}
+.width .counter{
+    font-size: 35px;
+    color: #FEA116;
+    font-weight: bold;
+}
+
+.width .meaning{
+    font-size: 18px;
+    width: auto;
+    display: block;
+  margin-left: 10px;
+}
+.width .meaning div{
+    font-weight: bold;
+}
+
+.read-more-btn{
+    padding: 10px 40px;
+    border-radius: 0px;
+}
+
+
+
+.ww-imge{
+    width: 30%;
+    margin-left: 114px;
+}
+.w-30{
+    width: 30%;
+}
+
+.most-item h1{
+    font-family: "Nunito", sans-serif;
+    font-weight: bold;
+}
+.ahmad{
+    border-bottom: 1px dashed rgb(139, 129, 129);
+}
+
+.food-imge{
+    width: 88px;
+    height: auto;
+}
+.f-20{
+    font-size: 20px !important;
+}
+.f-42{
+    font-size: 42px !important;
+}
+input{
+    font-size: 16px;
+}
+input:focus{
+    font-size: 14px;
+}
+input::placeholder{
+    text-indent: 10px;
+}
+.team-members .secound-font::after{
+    content: '';
+    width: 50PX;
+    height: 3PX;
+    background-color: #FEA116 !important;
+    position: absolute;
+    right: 390PX;
+    top: 25px;
+}
+.team-members .secound-font::before{
+    content: '';
+    width: 50PX;
+    height: 3PX;
+    background-color: #FEA116 !important;
+    position: absolute;
+    left: 390PX;
+    top: 25px;
+}
+.chif .imge-area{
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    cursor: pointer;
+    
+}
+.chif .imge-area img{
+    transition: 0.5s all ease-in-out;
+}
+.chif .imge-area:hover img{
+    transform: scale(1.1);
+}
+.chif .imge-area img{
+    width: 100%;
+    height: 100%;
+
+}
+.chif{
+    /* position: relative; */
+    height: calc(100% - 60px);
+    overflow: hidden;
+    transition: 0.5s all ease-in-out;
+}
+.chif:hover{
+ 
+    height: 100%;
+    
+
+    
+}
+.media-item{
+    width: 50px;
+    height: 50px;
+    background-color: #FEA116;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.chif-media{
+   margin-bottom: -22px;
+}
+
+.tit{
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+
+
+.footer {
+    background-color: #0F172B;
+    color: white;
+    padding: 60px 20px 30px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+  
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  .footer-section {
+    flex: 1 1 220px;
+    margin: 10px;
+  }
+  
+  .footer-section h4 {
+    color: orange;
+    margin-bottom: 15px;
+    position: relative;
+  }
+  
+  .footer-section h4::after {
+    content: "";
+    width: 40px;
+    height: 2px;
+    background: orange;
+    position: absolute;
+    bottom: 10px;
+    left: 110px;
+  }
+  
+  .footer-section ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-section ul li {
+    margin-bottom: 10px;
+  }
+  
+  .footer-section ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-section ul li a:hover {
+    color: orange;
+  }
+  
+  .social-icons a {
+    display: inline-block;
+    margin-right: 10px;
+    color: white;
+    font-size: 18px;
+    transition: color 0.3s;
+  }
+  
+  .social-icons a:hover {
+    color: orange;
+  }
+  
+  .newsletter-form input {
+    padding: 10px;
+    border: none;
+    width: 70%;
+    margin-top: 10px;
+  }
+  
+  .newsletter-form button {
+    padding: 10px 15px;
+    background-color: orange;
+    border: none;
+    color: white;
+    cursor: pointer;
+    margin-top: 10px;
+    border-radius: 20px;
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    color: #aaa;
+    font-size: 14px;
+    margin-top: 30px;
+  }
+
+
+
+
+@keyframes rotet {
+    100% {
+    transform: rotate(360deg);
+    }
+}
+
+
+
+
+
+/* --- Media Queries for Mobile Responsiveness --- */
+
+@media (max-width: 991.98px) {
+    .header-section {
+        height: auto;
+        min-height: 100vh;
+        padding-bottom: 50px;
+        padding-top: 100px; /* لضمان عدم اختفاء المحتوى تحت الـ Navbar Fixed */
+    }
+
+    .header-body {
+        margin: 0;
+        text-align: center;
+    }
+
+    .header-body img {
+        max-width: 80%; /* تصغير الصورة لتناسب الموبايل */
+        height: auto;
+        margin-top: 30px;
+    }
+
+    .h1 {
+        font-size: 2.5rem;
+    }
+
+    .p {
+        font-size: 1.2rem;
+    }
+
+    /* إلغاء الخطوط البرتقالية الجانبية التي تسبب سكرول عرضي */
+    .secound-font::after, 
+    .secound-font::before,
+    .contuct-us .secound-font::after,
+    .width-before::before,
+    .width-before::after,
+    .team-members .secound-font::after,
+    .team-members .secound-font::before {
+        display: none !important;
+    }
+
+    /* ضبط قسم About */
+    .ww-imge {
+        margin-left: 0;
+        width: 50%;
+    }
+    
+    .welcom .row.d-flex {
+        justify-content: center;
+        text-align: center;
+    }
+
+    /* ضبط قسم المنيو (القائمة) */
+    .ahmad {
+        flex-direction: column;
+        text-align: center;
+        padding: 10px;
+    }
+    
+    .food-menu .d-flex.justify-content-center {
+        flex-wrap: wrap;
+    }
+
+    /* ضبط الفوتر */
+    .footer-section {
+        flex: 1 1 100%;
+        text-align: center;
+    }
+    
+    .footer-section h4::after {
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: -5px;
+    }
+
+    .newsletter-form input {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 576px) {
+    .titel {
+        font-size: 25px; /* تصغير اسم المطعم في الناف بار */
+    }
+    
+    .f-42 {
+        font-size: 28px !important;
+    }
+
+    .card-body {
+        text-align: center;
+    }
+}
+
+
+
+
+
+
+@media (max-width: 991.98px) {
+    /* 1. حل مشكلة الطول وتداخل العناصر في الهيدر */
+    .header-section {
+        height: auto !important; /* إلغاء الـ 100vh */
+        min-height: 100vh;
+        padding-top: 100px; /* ترك مساحة للـ Navbar */
+        padding-bottom: 50px;
+        display: flex;
+        align-items: center;
+    }
+
+    .header-body {
+        margin: 0 !important; /* إلغاء المارجن 5% اللي عم يدفش العناصر */
+        width: 100%;
+        text-align: center;
+    }
+
+    /* 2. ضبط الهيدينج والباراغراف */
+    .h1 {
+        font-size: 1.8rem !important; /* حجم أنسب للموبايل */
+        margin-top: 20px;
+    }
+
+    .p {
+        font-size: 1rem !important; /* تصغير النص ليناسب عرض الشاشة */
+        padding: 0 15px;
+    }
+
+    /* 3. ضبط الصورة الدوارة */
+    .header-body img {
+        max-width: 250px !important; /* حجم أصغر لتبين كاملة مع النص */
+        height: auto !important;
+        margin: 30px auto 0 auto;
+        display: block;
+    }
+
+    /* 4. ترتيب العناصر (النص أولاً ثم الصورة) */
+    .header-body .col-lg-6:first-child {
+        order: 1;
+    }
+    .header-body .col-lg-6:last-child {
+        order: 2;
+    }
+}
+
