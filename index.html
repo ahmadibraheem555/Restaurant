@@ -3,7 +3,12 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Resturant</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SmoKehouse | Grill &amp; BBQ Restaurant</title>
+  <meta name="description" content="SmoKehouse is a grill and BBQ restaurant serving slow-smoked meats, fresh sides, and charcoal-grilled favorites. Book a table online.">
+  <meta name="theme-color" content="#0f172b">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔥</text></svg>">
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -12,680 +17,516 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Pacifico&display=swap"
     rel="stylesheet">
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Pacifico&display=swap"
-    rel="stylesheet">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Pacifico&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="./style.css">
 </head>
 
-<body>
-  <div class="header-section">
-    <nav class="navbar fixed-top navbar-expand-lg bg-body-tertiary bg-main-color">
-      <div class="container">
-        <a class="navbar-brand text-main-color titel" href="#"> <i class="fa-solid fa-utensils mx-1"></i> SmoKehouse</a>
-        <button class="navbar-toggler bg-main-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item mx-2">
-              <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item mx-2">
-              <a class="nav-link text-white" href="#">Features</a>
-            </li>
-            <li class="nav-item mx-2">
-              <a class="nav-link text-white" href="#">Pricing</a>
-            </li>
-            <li class="nav-item-- dropdown mx-2">
-              <a class="nav-link dropdown-toggle text-white" data-bs-toggle="dropdown" aria-expanded="false" href="#">
-                Pages
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                </li>
-              </ul>
-            </li>
-            <li class="nav-item mx-2">
-              <a class="nav-link active text-white" aria-disabled="true">Contact</a>
-            </li>
-            <li class="nav-item">
-              <button type="button" class="btn bg-second-color">Book A Table</button>
+<body data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="100" tabindex="0">
+  <a class="skip-link" href="#main">Skip to content</a>
 
-            </li>
+  <!-- ============ NAVBAR ============ -->
+  <nav id="mainNav" class="navbar fixed-top navbar-expand-lg site-nav" aria-label="Main navigation">
+    <div class="container">
+      <a class="navbar-brand brand" href="#home">
+        <i class="fa-solid fa-utensils" aria-hidden="true"></i> SmoKehouse
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav align-items-lg-center gap-lg-1">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#menu">Menu</a></li>
+          <li class="nav-item"><a class="nav-link" href="#team">Team</a></li>
+          <li class="nav-item"><a class="nav-link" href="#reviews">Reviews</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          <li class="nav-item ms-lg-3 mt-2 mt-lg-0">
+            <a class="btn btn-accent" href="#reservation">Book A Table</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main id="main">
+
+    <!-- ============ HERO ============ -->
+    <header id="home" class="hero">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-6 order-2 order-lg-1 text-center text-lg-start">
+            <p class="eyebrow">Grill &amp; BBQ House</p>
+            <h1 class="hero-title">Enjoy Our <span>Delicious</span> Meal</h1>
+            <p class="hero-text">
+              Slow-smoked meats, charcoal-grilled favorites, and fresh sides, cooked over real fire
+              and served with care. Come hungry, leave happy.
+            </p>
+            <div class="d-flex flex-wrap gap-3 justify-content-center justify-content-lg-start">
+              <a href="#reservation" class="btn btn-accent btn-lg">Book A Table</a>
+              <a href="#menu" class="btn btn-outline-light btn-lg">View Menu</a>
+            </div>
+          </div>
+          <div class="col-lg-6 order-1 order-lg-2 text-center">
+            <img class="hero-plate" src="./imgs/hero.png" width="500" height="500"
+              alt="Platter of grilled meats and vegetables on a round charcoal grill" fetchpriority="high">
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- ============ FEATURES ============ -->
+    <section class="features container" aria-label="Why choose us">
+      <div class="row g-4">
+        <div class="col-lg-3 col-md-6">
+          <article class="feature-card">
+            <i class="fa-solid fa-user-tie" aria-hidden="true"></i>
+            <h2>Skilled Chefs</h2>
+            <p>Our grill masters spend years learning fire, smoke, and timing.</p>
+          </article>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <article class="feature-card">
+            <i class="fa-solid fa-drumstick-bite" aria-hidden="true"></i>
+            <h2>Quality Ingredients</h2>
+            <p>Fresh cuts and seasonal produce, prepared in-house every day.</p>
+          </article>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <article class="feature-card">
+            <i class="fa-solid fa-cart-plus" aria-hidden="true"></i>
+            <h2>Online Ordering</h2>
+            <p>Order your favorites in a few taps and pick them up hot.</p>
+          </article>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <article class="feature-card">
+            <i class="fa-solid fa-truck-fast" aria-hidden="true"></i>
+            <h2>Fast Delivery</h2>
+            <p>Packed to stay hot and delivered to your door on time.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section id="about" class="section container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6">
+          <div class="about-grid">
+            <img src="./imgs/about-1.jpg" alt="Chef preparing food in the kitchen" loading="lazy" decoding="async">
+            <img src="./imgs/about-2.jpg" alt="Grilled dish served at the table" loading="lazy" decoding="async">
+            <img src="./imgs/about-3.jpg" alt="Fresh ingredients on a counter" loading="lazy" decoding="async">
+            <img src="./imgs/about-4.jpg" alt="Restaurant dining area" loading="lazy" decoding="async">
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <p class="section-label"><span>About Us</span></p>
+          <h2 class="section-title">Welcome to <i class="fa-solid fa-utensils text-accent" aria-hidden="true"></i> SmoKehouse</h2>
+          <p>
+            SmoKehouse started with a simple idea: great barbecue needs patience. Our meats are seasoned
+            by hand, smoked slowly over charcoal, and finished on the grill so every bite is tender
+            and full of flavor.
+          </p>
+          <p>
+            From weekday lunches to family dinners, we keep the menu honest and the portions generous,
+            and we cook everything fresh.
+          </p>
+          <div class="row g-4 mt-1">
+            <div class="col-sm-6">
+              <div class="stat">
+                <span class="stat-number">15</span>
+                <span class="stat-text">Years of<strong>Experience</strong></span>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="stat">
+                <span class="stat-number">50</span>
+                <span class="stat-text">Popular<strong>Menu Items</strong></span>
+              </div>
+            </div>
+          </div>
+          <a href="#menu" class="btn btn-accent mt-4 px-4">Explore The Menu</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ MENU ============ -->
+    <section id="menu" class="section container">
+      <div class="text-center">
+        <p class="section-label centered"><span>Food Menu</span></p>
+        <h2 class="section-title">Most Popular Items</h2>
+      </div>
+
+      <div class="menu-tabs" role="group" aria-label="Filter menu by meal">
+        <button type="button" class="menu-tab is-active" data-filter="breakfast" aria-pressed="true">
+          <i class="fa-solid fa-mug-saucer" aria-hidden="true"></i>
+          <span><small>Popular</small>Breakfast</span>
+        </button>
+        <button type="button" class="menu-tab" data-filter="lunch" aria-pressed="false">
+          <i class="fa-solid fa-burger" aria-hidden="true"></i>
+          <span><small>Popular</small>Lunch</span>
+        </button>
+        <button type="button" class="menu-tab" data-filter="dinner" aria-pressed="false">
+          <i class="fa-solid fa-utensils" aria-hidden="true"></i>
+          <span><small>Popular</small>Dinner</span>
+        </button>
+      </div>
+
+      <div class="row g-4" id="menuList">
+        <!-- Breakfast -->
+        <div class="col-lg-6 menu-item" data-category="breakfast">
+          <article class="dish">
+            <img src="./imgs/menu-1.jpg" alt="Smoked brisket hash" width="88" height="88" loading="lazy" decoding="async">
+            <div class="dish-body">
+              <div class="dish-head"><h3>Smoked Brisket Hash</h3><span class="price">$12</span></div>
+              <p>Slow-smoked brisket, crispy potatoes, peppers, and a fried egg.</p>
+            </div>
+          </article>
+        </div>
+        <div class="col-lg-6 menu-item" data-category="breakfast">
+          <article class="dish">
+            <img src="./imgs/menu-2.jpg" alt="Chicken sausage wrap" width="88" height="88" loading="lazy" decoding="async">
+            <div class="dish-body">
+              <div class="dish-head"><h3>Chicken Sausage Wrap</h3><span class="price">$9</span></div>
+              <p>Grilled chicken sausage, scrambled eggs, and herbs in a warm wrap.</p>
+            </div>
+          </article>
+        </div>
+        <div class="col-lg-6 menu-item" data-category="breakfast">
+          <article class="dish">
+            <img src="./imgs/menu-3.jpg" alt="Grilled veggie omelette" width="88" height="88" loading="lazy" decoding="async">
+            <div class="dish-body">
+              <div class="dish-head"><h3>Grilled Veggie Omelette</h3><span class="price">$8</span></div>
+              <p>Three eggs folded with charred peppers, mushrooms, and cheese.</p>
+            </div>
+          </article>
+        </div>
+
+        <!-- Lunch -->
+        <div class="col-lg-6 menu-item" data-category="lunch" hidden>
+          <article class="dish">
+            <img src="./imgs/menu-4.jpg" alt="Smokehouse chicken burger" width="88" height="88" loading="lazy" decoding="async">
+            <div class="dish-body">
+              <div class="dish-head"><h3>Smokehouse Chicken Burger</h3><span class="price">$14</span></div>
+              <p>Crispy chicken, smoked sauce, pickles, and a toasted brioche bun.</p>
+            </div>
+          </article>
+        </div>
+        <div class="col-lg-6 menu-item" data-category="lunch" hidden>
+          <article class="dish">
+            <img src="./imgs/menu-5.jpg" alt="BBQ pulled beef sandwich" width="88" height="88" loading="lazy" decoding="async">
+            <div class="dish-body">
+              <div class="dish-head"><h3>BBQ Pulled Beef Sandwich</h3><span class="price">$13</span></div>
+              <p>Tender pulled beef, tangy slaw, and house barbecue sauce.</p>
+            </div>
+          </article>
+        </div>
+        <div class="col-lg-6 menu-item" data-category="lunch" hidden>
+          <article class="dish">
+            <img src="./imgs/menu-6.jpg" alt="Grilled chicken salad" width="88" height="88" loading="lazy" decoding="async">
+            <div class="dish-body">
+              <div class="dish-head"><h3>Grilled Chicken Salad</h3><span class="price">$11</span></div>
+              <p>Charcoal chicken over crisp greens, tomatoes, and lemon dressing.</p>
+            </div>
+          </article>
+        </div>
+
+        <!-- Dinner -->
+        <div class="col-lg-6 menu-item" data-category="dinner" hidden>
+          <article class="dish">
+            <img src="./imgs/menu-7.jpg" alt="Mixed grill platter" width="88" height="88" loading="lazy" decoding="async">
+            <div class="dish-body">
+              <div class="dish-head"><h3>Mixed Grill Platter</h3><span class="price">$24</span></div>
+              <p>Ribs, chicken, sausage, and grilled vegetables made for sharing.</p>
+            </div>
+          </article>
+        </div>
+        <div class="col-lg-6 menu-item" data-category="dinner" hidden>
+          <article class="dish">
+            <img src="./imgs/menu-8.jpg" alt="Charcoal ribeye steak" width="88" height="88" loading="lazy" decoding="async">
+            <div class="dish-body">
+              <div class="dish-head"><h3>Charcoal Ribeye Steak</h3><span class="price">$29</span></div>
+              <p>Thick-cut ribeye grilled over charcoal with herb butter.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ RESERVATION ============ -->
+    <section id="reservation" class="reservation">
+      <div class="row g-0">
+        <div class="col-lg-6 reservation-img">
+          <img src="./imgs/singel.jpg" alt="Table set for dinner at SmoKehouse" loading="lazy" decoding="async">
+        </div>
+        <div class="col-lg-6 reservation-form">
+          <p class="section-label"><span>Reservation</span></p>
+          <h2 class="section-title text-white">Book A Table Online</h2>
+
+          <form id="bookingForm" novalidate>
+            <div class="row g-3">
+              <div class="col-sm-6">
+                <label for="bName" class="form-label">Name</label>
+                <input id="bName" name="name" type="text" class="form-control" autocomplete="name" required>
+                <div class="field-error" id="bNameError" role="alert"></div>
+              </div>
+              <div class="col-sm-6">
+                <label for="bEmail" class="form-label">Email</label>
+                <input id="bEmail" name="email" type="email" class="form-control" autocomplete="email" required>
+                <div class="field-error" id="bEmailError" role="alert"></div>
+              </div>
+              <div class="col-sm-6">
+                <label for="bDate" class="form-label">Date</label>
+                <input id="bDate" name="date" type="date" class="form-control" required>
+                <div class="field-error" id="bDateError" role="alert"></div>
+              </div>
+              <div class="col-sm-6">
+                <label for="bGuests" class="form-label">Guests</label>
+                <select id="bGuests" name="guests" class="form-select" required>
+                  <option value="">Select</option>
+                  <option>1 - 2 people</option>
+                  <option>3 - 4 people</option>
+                  <option>5 - 6 people</option>
+                  <option>7+ people</option>
+                </select>
+                <div class="field-error" id="bGuestsError" role="alert"></div>
+              </div>
+              <div class="col-12">
+                <label for="bNotes" class="form-label">Special requests (optional)</label>
+                <textarea id="bNotes" name="notes" rows="3" class="form-control"></textarea>
+              </div>
+              <div class="col-12 d-grid">
+                <button type="submit" class="btn btn-accent btn-lg">Send Reservation</button>
+              </div>
+            </div>
+            <p id="bookingStatus" class="form-status" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ TEAM ============ -->
+    <section id="team" class="section container">
+      <div class="text-center">
+        <p class="section-label centered"><span>Team Members</span></p>
+        <h2 class="section-title">Our Master Chefs</h2>
+      </div>
+      <div class="row g-4 mt-2">
+        <div class="col-lg-3 col-md-6">
+          <article class="chef">
+            <div class="chef-photo"><img src="./imgs/team-1.jpg" alt="Portrait of Daniel Foster" loading="lazy" decoding="async"></div>
+            <h3>Daniel Foster</h3>
+            <p>Head Chef</p>
+          </article>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <article class="chef">
+            <div class="chef-photo"><img src="./imgs/team-2.jpg" alt="Portrait of Sofia Marin" loading="lazy" decoding="async"></div>
+            <h3>Sofia Marin</h3>
+            <p>Pastry Chef</p>
+          </article>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <article class="chef">
+            <div class="chef-photo"><img src="./imgs/team-3.jpg" alt="Portrait of Marcus Hale" loading="lazy" decoding="async"></div>
+            <h3>Marcus Hale</h3>
+            <p>Grill Master</p>
+          </article>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <article class="chef">
+            <div class="chef-photo"><img src="./imgs/team-4.jpg" alt="Portrait of Elena Ruiz" loading="lazy" decoding="async"></div>
+            <h3>Elena Ruiz</h3>
+            <p>Sous Chef</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ REVIEWS ============ -->
+    <section id="reviews" class="section container">
+      <div class="text-center">
+        <p class="section-label centered"><span>Testimonial</span></p>
+        <h2 class="section-title">What Our Guests Say</h2>
+      </div>
+      <div class="row g-4 mt-2">
+        <div class="col-lg-4">
+          <figure class="review">
+            <i class="fa-solid fa-quote-left" aria-hidden="true"></i>
+            <blockquote>The brisket was unbelievably tender and the service was warm from the moment we walked in.</blockquote>
+            <figcaption>
+              <img src="./imgs/testimonial-1.jpg" alt="" width="50" height="50" loading="lazy" decoding="async">
+              <span><strong>Jordan M.</strong><small>Dinner guest</small></span>
+            </figcaption>
+          </figure>
+        </div>
+        <div class="col-lg-4">
+          <figure class="review">
+            <i class="fa-solid fa-quote-left" aria-hidden="true"></i>
+            <blockquote>Booking online took a minute, and our table was ready right on time. We will be back.</blockquote>
+            <figcaption>
+              <img src="./imgs/testimonial-2.jpg" alt="" width="50" height="50" loading="lazy" decoding="async">
+              <span><strong>Amira K.</strong><small>Weekend visit</small></span>
+            </figcaption>
+          </figure>
+        </div>
+        <div class="col-lg-4">
+          <figure class="review">
+            <i class="fa-solid fa-quote-left" aria-hidden="true"></i>
+            <blockquote>Great portions, fresh sides, and the mixed grill is perfect for sharing with the family.</blockquote>
+            <figcaption>
+              <img src="./imgs/testimonial-4.jpg" alt="" width="50" height="50" loading="lazy" decoding="async">
+              <span><strong>Chris T.</strong><small>Family lunch</small></span>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer id="contact" class="site-footer">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-3 col-sm-6">
+          <h2>Company</h2>
+          <ul class="footer-links">
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#reservation">Reservation</a></li>
+            <li><a href="#team">Our Team</a></li>
+            <li><a href="#reviews">Reviews</a></li>
           </ul>
         </div>
-      </div>
-    </nav>
-    <div class="row header-body h-100">
-      <div class="col-lg-6 col-md-12 col-sm-12 mt-5">
-        <h1 class="text-white h1">Enjoy Our Delicious Meal</h1>
-        <p class="text-white p">
-          Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos.
-          Clita erat ipsum et lorem et sit,
-          sed stet lorem sit clita duo justo magna dolore erat amet
-        </p>
-        <button type="button" class="btn bg-second-color">Book A Table</button>
-      </div>
-      <div class="col-lg-6 col-md-12 col-sm-12">
-        <img class="w-100 h-100" src="./imgs/hero.png" alt="">
-      </div>
-
-    </div>
-  </div>
-  <div class="servises container my-5">
-    <div class="row">
-      <div class="col-lg-3 col-md-6 col-sm-12">
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title"><i class="fa fa-3x fa-user-tie text-main-color mb-4"></i></h5>
-            <h6 class="card-subtitle mb-2 text-blak fw-bold">Master Chefs</h6>
-            <p class="card-text">Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam.</p>
-          </div>
+        <div class="col-lg-3 col-sm-6">
+          <h2>Contact</h2>
+          <address>
+            <p><i class="fa-solid fa-location-dot" aria-hidden="true"></i> 123 Grill Street, Downtown</p>
+            <p><i class="fa-solid fa-phone" aria-hidden="true"></i> <a href="tel:+15550102030">+1 555 010 2030</a></p>
+            <p><i class="fa-solid fa-envelope" aria-hidden="true"></i> <a href="mailto:hello@smokehouse.example">hello@smokehouse.example</a></p>
+          </address>
+        </div>
+        <div class="col-lg-3 col-sm-6">
+          <h2>Opening Hours</h2>
+          <p>Monday - Saturday<br><strong>09:00 AM - 09:00 PM</strong></p>
+          <p>Sunday<br><strong>10:00 AM - 08:00 PM</strong></p>
+        </div>
+        <div class="col-lg-3 col-sm-6">
+          <h2>Newsletter</h2>
+          <p>Get new menu items and special offers in your inbox.</p>
+          <form id="newsletterForm" class="newsletter" novalidate>
+            <label for="nlEmail" class="visually-hidden">Email address</label>
+            <input id="nlEmail" type="email" class="form-control" placeholder="Your email" autocomplete="email" required>
+            <button type="submit" class="btn btn-accent">Sign Up</button>
+          </form>
+          <p id="newsletterStatus" class="form-status" role="status" aria-live="polite"></p>
         </div>
       </div>
-      <div class="col-lg-3 col-md-6 col-sm-12">
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title"><i class="fa fa-3x fa-utensils text-main-color mb-4"></i></h5>
-            <h6 class="card-subtitle mb-2 text-blak fw-bold">Quality Food</h6>
-            <p class="card-text">Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-3 col-md-6 col-sm-12">
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title"><i class="fa fa-3x fa-cart-plus text-main-color mb-4"></i></h5>
-            <h6 class="card-subtitle mb-2 text-blak fw-bold">Online Order</h6>
-            <p class="card-text">Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-3 col-md-6 col-sm-12">
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title"><i class="fa fa-3x fa-headset text-main-color mb-4"></i></h5>
-            <h6 class="card-subtitle mb-2 text-blak fw-bold">24/7 Service</h6>
-            <p class="card-text">Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam.</p>
-          </div>
-        </div>
+
+      <hr>
+      <div class="footer-bottom">
+        <p>&copy; <span id="year">2026</span> SmoKehouse. Demo project built by Ahmad Ibraheem. Names, prices, and reviews are sample content.</p>
+        <p>Design based on the free Restoran template by <a href="https://htmlcodex.com" target="_blank" rel="noopener noreferrer">HTML Codex</a>, distributed by <a href="https://themewagon.com" target="_blank" rel="noopener noreferrer">ThemeWagon</a>.</p>
       </div>
     </div>
-  </div>
-
-  <section class="welcom container">
-    <div class="row ">
-      <div class="col-lg-6 col-md-12 col-ms-12">
-        <div class="row d-flex align-items-end mb-2 ">
-          <img class="w-50" src="./imgs/about-1.jpg" alt="">
-          <img class="w-30" src="./imgs/about-2.jpg" alt="">
-        </div>
-
-        <div class="row d-flex align-items-start">
-          <img class="ww-imge" src="./imgs/about-3.jpg" alt="">
-          <img class="w-50" src="./imgs/about-4.jpg" alt="">
-
-        </div>
-      </div>
-      <div class="col-lg-6 col-md-12 col-ms-12">
-        <div>
-          <div class="secound-font">
-            <h2>About us</h2>
-          </div>
-          <h2>
-            Welcome to <i class="fa  fa-utensils text-main-color mb-4"></i> SmoKehouse
-          </h2>
-        </div>
-        <div>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam ab cupiditate earum nulla suscipit.
-            Voluptatibus ducimus, hic quam eum iure, ullam ipsa recusandae corporis,
-            explicabo qui consectetur omnis sit cum .
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam ab cupiditate earum nulla suscipit.
-            Voluptatibus ducimus, hic quam eum iure, ullam ipsa recusandae corporis,
-            explicabo qui consectetur omnis sit cum .
-          </p>
-        </div>
-        <div class="row">
-          <div class="col-lg-6 col-sm-6 col-md-6">
-            <div class="width">
-              <div class="counter">15</div>
-              <div class="meaning">
-                Years of 
-                <div>Experience</div>
-              </div>
-              
-            </div>
-          </div>
-          <div class="col-lg-6 col-sm-6 col-md-6">
-            <div class="width">
-              <div class="counter">50</div>
-              <div class="meaning">
-                Popular
-                <div>Master Chefs</div>
-              </div>
-              
-          </div>
-        </div>
-      </div>
-      <button type="button" class="btn bg-second-color my-5 read-more-btn">Read More</button>
-
-    </div>
-  </section>
-  <section class="food-menu w-100 my-5 container">
-    <div class=" w-100 text-center" > 
-    <div class="secound-font width-before">
-      <h2>Food menu</h2>
-    </div>
-  </div>
-  <div class="most-item">
-    <h1 class="text-center">Most Popular Items</h1>
-  </div>
-
-  <div class="d-flex justify-content-center my-5 ">
-    <div class="d-flex align-items-center ahmad">
-      <i class="fa-solid fa-mug-saucer fa-2x text-main-color"></i>
-    <div class="mx-3">
-      <div>Popular</div>
-      <div class="fw-bold">Breakfast</div>
-    </div>
-    </div>
-    <div class="d-flex align-items-center ahmad">
-      <i class="fa-solid fa-burger fa-2x  text-main-color "></i>
-    <div class="mx-3">
-      <div>Popular</div>
-      <div class="fw-bold">Breakfast</div>
-    </div>
-    </div>
-    <div class="d-flex align-items-center ahmad">
-      <i class="fa-solid fa-utensils fa-2x text-main-color"></i>
-    <div class="mx-3">
-      <div>Popular</div>
-      <div class="fw-bold">Breakfast</div>
-    </div>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-lg-6 col-md-12 col-md-6">
-     <div class="d-flex my-3">
-      <div>
-        <img class="food-imge" src="./imgs/menu-1.jpg" alt="">
-      </div>
-      <div class="mx-3 w-100">
-          <div class="d-flex justify-content-between">
-            <div class="fw-bold f-20">Chicken Burger</div>
-            <div class="text-main-color fw-bold f-20">$115</div>
-          </div>
-          <hr>
-          <div><em>Ipsum ipsum clita erat amet dolor justo diam </em></div>
-      </div>
-     </div>
-     <div class="d-flex my-3">
-      <div>
-        <img class="food-imge" src="./imgs/menu-2.jpg" alt="">
-      </div>
-      <div class="mx-3 w-100">
-          <div class="d-flex justify-content-between">
-            <div class="fw-bold f-20">Chicken Burger</div>
-            <div class="text-main-color fw-bold f-20">$115</div>
-          </div>
-          <hr>
-          <div><em>Ipsum ipsum clita erat amet dolor justo diam </em></div>
-      </div>
-     </div>
-     <div class="d-flex my-3">
-      <div>
-        <img class="food-imge" src="./imgs/menu-3.jpg" alt="">
-      </div>
-      <div class="mx-3 w-100">
-          <div class="d-flex justify-content-between">
-            <div class="fw-bold f-20">Chicken Burger</div>
-            <div class="text-main-color fw-bold f-20">$115</div>
-          </div>
-          <hr>
-          <div><em>Ipsum ipsum clita erat amet dolor justo diam </em></div>
-      </div>
-     </div>
-     <div class="d-flex my-3">
-      <div>
-        <img class="food-imge" src="./imgs/menu-4.jpg" alt="">
-      </div>
-      <div class="mx-3 w-100">
-          <div class="d-flex justify-content-between">
-            <div class="fw-bold f-20">Chicken Burger</div>
-            <div class="text-main-color fw-bold f-20">$115</div>
-          </div>
-          <hr>
-          <div><em>Ipsum ipsum clita erat amet dolor justo diam </em></div>
-      </div>
-     </div>
-     
-     
-      
-    </div>
-    <div class="col-lg-6 col-md-12 col-md-6">
-      <div class="d-flex">
-       <div>
-         <img class="food-imge" src="./imgs/menu-5.jpg" alt="">
-       </div>
-       <div class="mx-3 w-100">
-           <div class="d-flex justify-content-between">
-             <div class="fw-bold f-20">Chicken Burger</div>
-             <div class="text-main-color fw-bold f-20">$115</div>
-           </div>
-           <hr>
-           <div><em>Ipsum ipsum clita erat amet dolor justo diam </em></div>
-       </div>
-      </div>
-      <div class="d-flex my-3">
-       <div>
-         <img class="food-imge" src="./imgs/menu-6.jpg" alt="">
-       </div>
-       <div class="mx-3 w-100">
-           <div class="d-flex justify-content-between">
-             <div class="fw-bold f-20">Chicken Burger</div>
-             <div class="text-main-color fw-bold f-20">$115</div>
-           </div>
-           <hr>
-           <div><em>Ipsum ipsum clita erat amet dolor justo diam </em></div>
-       </div>
-      </div>
-      <div class="d-flex my-3">
-       <div>
-         <img class="food-imge" src="./imgs/menu-7.jpg" alt="">
-       </div>
-       <div class="mx-3 w-100">
-           <div class="d-flex justify-content-between">
-             <div class="fw-bold f-20">Chicken Burger</div>
-             <div class="text-main-color fw-bold f-20">$115</div>
-           </div>
-           <hr>
-           <div><em>Ipsum ipsum clita erat amet dolor justo diam </em></div>
-       </div>
-      </div>
-      <div class="d-flex my-3">
-       <div>
-         <img class="food-imge" src="./imgs/menu-8.jpg" alt="">
-       </div>
-       <div class="mx-3 w-100">
-           <div class="d-flex justify-content-between">
-             <div class="fw-bold f-20">Chicken Burger</div>
-             <div class="text-main-color fw-bold f-20">$115</div>
-           </div>
-           <hr>
-           <div><em>Ipsum ipsum clita erat amet dolor justo diam </em></div>
-       </div>
-      </div>
-      
-      
-       
-     </div>
-  </div>
-  </section>
-
-  <section class="contuct-us container-fluid">
-    <div class="row">
-      <div class="col-lg-6 col-md-12 col-sm-12 p-0">
-        <img class="w-100 h-100" src="./imgs/singel.jpg" alt="">
-      </div>
-      <div class="col-lg-6 col-md-12 col-sm-12 bg-main-color p-4">
-        <div class="w-100">
-          <div class="secound-font">
-            <h2>Reservation</h2>
-          </div>
-          <div class="f-42 text-white">
-            <h1>Book A Table Online</h1>
-          </div>
-        </div>
-        <form>
-          <div class="row">
-            <div class="col-6">
-              <input class="w-100 py-3" placeholder="your name">
-            </div>
-            <div class="col-6">
-              <input class="w-100 py-3" placeholder="your email">
-            </div>
-          </div>
-          <div class="row my-2">
-            <div class="col-6">
-              <input type="date" class="w-100 py-3" placeholder="your name">
-            </div>
-            <div class="col-6">
-              <select  class="w-100 py-3">
-                <option value=""> pebole 1</option>
-                <option value=""> pebole 2</option>
-                <option value=""> pebole 3</option>
-              </select>
-            </div>
-          </div>
-          <div class="row">
-          <div class="col-12">
-            <textarea class="w-100"></textarea>
-          </div>
-          </div>
-          <div class="row mt-4">
-            <div class="col-12 d-grid">
-              <button class="bg-second-color btn text-white py-2">send</button>
-              
-            </div>
-          </div>
-        </form>
-      </div>
-    </div>
-  </section>
-
-
-  <section class="team-members w-100 my-5 container">
-    <div class=" w-100 text-center" > 
-    <div class="secound-font width-before">
-      <h2>Team Members</h2>
-    </div>
-  </div>
-  <div class="most-item">
-    <h1 class="text-center">Our Master Chefs</h1>
-  </div>
-  <div class="row mt-4">
-    <div class="col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center">
-      <div class="card chif py-4" style="width: 18rem;">
-       <div class="d-flex justify-content-center">
-        <div class="imge-area">
-        <img src="./imgs/team-1.jpg" class="card-img-top" alt="...">  
-      </div>
-       </div>
-        <div class="card-body text-center">
-          <h5 class="card-title tit">Full Name</h5>
-          <p class="card-text">Designation</p>
-        </div>
-        <div class="chif-media d-flex justify-content-center">
-          <div class="media-item mx-1">
-            <i class="fab fa-facebook" style=" font-size:20px; margin: 10px;"></i>
-          </div>
-          <div class="media-item mx-1">
-            <i class="fab fa-twitter" style=" font-size:20px; margin: 10px;"></i>
-          </div>
-          <div class="media-item mx-1">
-            <i class="fab fa-instagram" style=" font-size:20px; margin: 10px;"></i>
-          </div>
-
-        </div>
-      </div>
-    </div>
-    <div class="col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center">
-      <div class="card chif py-4" style="width: 18rem;">
-       <div class="d-flex justify-content-center">
-        <div class="imge-area">
-        <img src="./imgs/team-2.jpg" class="card-img-top" alt="...">  
-      </div>
-       </div>
-        <div class="card-body text-center">
-          <h5 class="card-title tit">Full Name</h5>
-          <p class="card-text">Designation</p>
-        </div>
-        <div class="chif-media d-flex justify-content-center">
-          <div class="media-item mx-1">
-            <i class="fab fa-facebook" style=" font-size:20px; margin: 10px;"></i>
-          </div>
-          <div class="media-item mx-1">
-            <i class="fab fa-twitter" style=" font-size:20px; margin: 10px;"></i>
-          </div>
-          <div class="media-item mx-1">
-            <i class="fab fa-instagram" style=" font-size:20px; margin: 10px;"></i>
-          </div>
-
-        </div>
-      </div>
-    </div>
-    <div class="col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center">
-      <div class="card chif py-4" style="width: 18rem;">
-       <div class="d-flex justify-content-center">
-        <div class="imge-area">
-        <img src="./imgs/team-3.jpg" class="card-img-top" alt="...">  
-      </div>
-       </div>
-        <div class="card-body text-center">
-          <h5 class="card-title tit">Full Name</h5>
-          <p class="card-text">Designation</p>
-        </div>
-        <div class="chif-media d-flex justify-content-center">
-          <div class="media-item mx-1">
-            <i class="fab fa-facebook" style=" font-size:20px; margin: 10px;"></i>
-          </div>
-          <div class="media-item mx-1">
-            <i class="fab fa-twitter" style=" font-size:20px; margin: 10px;"></i>
-          </div>
-          <div class="media-item mx-1">
-            <i class="fab fa-instagram" style=" font-size:20px; margin: 10px;"></i>
-          </div>
-
-        </div>
-      </div>
-    </div>
-    <div class="col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center">
-      <div class="card chif py-4" style="width: 18rem;">
-       <div class="d-flex justify-content-center">
-        <div class="imge-area">
-        <img src="./imgs/team-4.jpg" class="card-img-top" alt="...">  
-      </div>
-       </div>
-        <div class="card-body text-center">
-          <h5 class="card-title tit">Full Name</h5>
-          <p class="card-text">Designation</p>
-        </div>
-        <div class="chif-media d-flex justify-content-center">
-          <div class="media-item mx-1">
-            <i class="fab fa-facebook" style=" font-size:20px; margin: 10px;"></i>
-          </div>
-          <div class="media-item mx-1">
-            <i class="fab fa-twitter" style=" font-size:20px; margin: 10px;"></i>
-          </div>
-          <div class="media-item mx-1">
-            <i class="fab fa-instagram" style=" font-size:20px; margin: 10px;"></i>
-          </div>
-
-        </div>
-      </div>
-    </div>
-  </div>
-  </section>
-
-
-
-  <section class="team-members w-100 my-5 container">
-    <div class=" w-100 text-center" > 
-    <div class="secound-font width-before">
-      <h2>Testimonial</h2>
-    </div>
-  </div>
-  <div class="most-item">
-    <h1 class="text-center">Our Clients Say!!!</h1>
-  </div>
-
-  </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <div class="servises container my-5">
-    <div class="row">
-      <div class="col-lg-4 col-md-6 col-sm-12">
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title"><i class="fas fa-quote-left" style="color: #f47c1e; font-size: 50px;"></i></h5>
-            <p class="card-text tit">Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam.</p>
-            <div class="card-text mb-3 d-flex align-items-center">
-              <img src="./imgs/testimonial-1.jpg" style="width: 50px; height: 50px; border-radius: 50%;" alt="">
-              <div class="mx-2 tit">CLIENT NUME</div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4 col-md-6 col-sm-12">
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title"><i class="fas fa-quote-left" style="color: #f47c1e; font-size: 50px;"></i></h5>
-            <p class="card-text tit">Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam.</p>
-            <div class="card-text mb-3 d-flex align-items-center">
-              <img src="./imgs/testimonial-2.jpg" style="width: 50px; height: 50px; border-radius: 50%;" alt="">
-              <div class="mx-2 tit">CLIENT NUME</div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4 col-md-6 col-sm-12">
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title"><i class="fas fa-quote-left" style="color: #f47c1e; font-size: 50px;"></i></h5>
-            <p class="card-text tit">Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam.</p>
-            <div class="card-text mb-3 d-flex align-items-center">
-              <img src="./imgs/testimonial-4.jpg" style="width: 50px; height: 50px; border-radius: 50%;" alt="">
-              <div class="mx-2 tit">CLIENT NUME</div>
-              
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-
-  <footer class="footer">
-  <div class="footer-container">
-    <!-- Company -->
-    <div class="footer-section">
-      <h4>Company</h4>
-      <ul>
-        <li><a href="#">About Us</a></li>
-        <li><a href="#">Contact Us</a></li>
-        <li><a href="#">Reservation</a></li>
-        <li><a href="#">Privacy Policy</a></li>
-        <li><a href="#">Terms & Condition</a></li>
-      </ul>
-    </div>
-
-    <!-- Contact -->
-    <div class="footer-section">
-      <h4>Contact</h4>
-      <p>123 Street, New York, USA</p>
-      <p>+012 345 67890</p>
-      <p>info@example.com</p>
-      <div class="social-icons">
-        <a href="#"><i class="fab fa-facebook" style="color:#1877F2; font-size:24px; margin: 10px;"></i></a>
-        <a href="#"><i class="fab fa-twitter" style="color:#1DA1F2; font-size:24px; margin: 10px;"></i></a>
-        <a href="#"><i class="fab fa-youtube" style="font-size: 24px; color: red;"></i></a>
-        <a href="#"><i class="fab fa-linkedin" style="font-size: 24px; color: #0A66C2;"></i></a>
-      </div>
-    </div>
-
-    <!-- Opening -->
-    <div class="footer-section">
-      <h4>Opening</h4>
-      <p>Monday - Saturday: 09AM - 09PM</p>
-      <p>Sunday: 10AM - 08PM</p>
-    </div>
-
-    <!-- Newsletter -->
-    <div class="footer-section">
-      <h4>Newsletter</h4>
-      <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
-      <form class="newsletter-form">
-        <input type="email" placeholder="Your email">
-        <button type="submit">SIGNUP</button>
-      </form>
-    </div>
-  </div>
-<hr>
-  <div class="footer-bottom">
-    <p>© Your Site Name, All Right Reserved. Designed By HTML Codex</p>
-    <p>Distributed By ThemeWagon</p>
-  </div>
-</footer>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
     crossorigin="anonymous"></script>
 
+  <script>
+    (function () {
+      // Footer year
+      document.getElementById("year").textContent = new Date().getFullYear();
+
+      // Navbar background after scrolling
+      var nav = document.getElementById("mainNav");
+      function onScroll() { nav.classList.toggle("scrolled", window.scrollY > 40); }
+      onScroll();
+      window.addEventListener("scroll", onScroll, { passive: true });
+
+      // Close the mobile menu after choosing a link
+      var collapseEl = document.getElementById("navbarNav");
+      document.querySelectorAll("#navbarNav a").forEach(function (link) {
+        link.addEventListener("click", function () {
+          if (collapseEl.classList.contains("show")) {
+            bootstrap.Collapse.getOrCreateInstance(collapseEl).hide();
+          }
+        });
+      });
+
+      // Menu filter (Breakfast / Lunch / Dinner)
+      var tabs = document.querySelectorAll(".menu-tab");
+      var items = document.querySelectorAll(".menu-item");
+      tabs.forEach(function (tab) {
+        tab.addEventListener("click", function () {
+          var filter = tab.dataset.filter;
+          tabs.forEach(function (t) {
+            var on = t === tab;
+            t.classList.toggle("is-active", on);
+            t.setAttribute("aria-pressed", on ? "true" : "false");
+          });
+          items.forEach(function (item) { item.hidden = item.dataset.category !== filter; });
+        });
+      });
+
+      // Booking date cannot be in the past
+      var dateInput = document.getElementById("bDate");
+      dateInput.min = new Date().toISOString().split("T")[0];
+
+      // Reservation form (front-end demo: validates and confirms, no server)
+      var form = document.getElementById("bookingForm");
+      var status = document.getElementById("bookingStatus");
+      var rules = [
+        { id: "bName", error: "bNameError", message: "Please enter your name." },
+        { id: "bEmail", error: "bEmailError", message: "Please enter a valid email address.", email: true },
+        { id: "bDate", error: "bDateError", message: "Please choose a date." },
+        { id: "bGuests", error: "bGuestsError", message: "Please select the number of guests." }
+      ];
+      var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+      form.addEventListener("submit", function (e) {
+        e.preventDefault();
+        var valid = true;
+        status.textContent = "";
+        status.className = "form-status";
+        rules.forEach(function (rule) {
+          var input = document.getElementById(rule.id);
+          var err = document.getElementById(rule.error);
+          var value = input.value.trim();
+          var ok = value !== "" && (!rule.email || emailPattern.test(value));
+          err.textContent = ok ? "" : rule.message;
+          input.setAttribute("aria-invalid", ok ? "false" : "true");
+          if (!ok) valid = false;
+        });
+        if (!valid) return;
+        form.reset();
+        status.className = "form-status success";
+        status.textContent = "Thank you! Your reservation request was received. We will confirm by email.";
+      });
+
+      // Newsletter form
+      var nlForm = document.getElementById("newsletterForm");
+      var nlStatus = document.getElementById("newsletterStatus");
+      nlForm.addEventListener("submit", function (e) {
+        e.preventDefault();
+        var input = document.getElementById("nlEmail");
+        if (!emailPattern.test(input.value.trim())) {
+          nlStatus.className = "form-status error";
+          nlStatus.textContent = "Please enter a valid email address.";
+          return;
+        }
+        nlForm.reset();
+        nlStatus.className = "form-status success";
+        nlStatus.textContent = "You're subscribed. Thank you!";
+      });
+    })();
+  </script>
 </body>
 
 </html>
